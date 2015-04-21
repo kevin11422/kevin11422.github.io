@@ -1,0 +1,59 @@
+<div class="title">
+    Today's Weather
+</div>
+
+<div class="info">
+    <div id="error" class="row error">
+        <img src="img/error.png">
+        <span></span>
+    </div>
+
+    <div class="row">
+        <div>City :
+            <input type="text" id="city" value="Taipei">
+        </div>
+
+        <div>Country :
+            <input type="text" id="country" value="TW">
+        </div>
+
+        <div>
+            <input id="search" type="submit" value="Search">
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="weatherIcon" class="icon none"></div>
+
+        <div class="desc">
+            <div id="weatherMain" class="big">
+
+            </div>
+
+            <div id="weatherDesc" class="small">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">Temperature :
+
+        <div id="tempMin" class="temp">
+            --
+        </div>&deg;C~
+
+        <div id="tempMax" class="temp">
+            --
+        </div>&deg;C
+
+    </div>
+
+    <div class="row">Humidity :
+        <div id="humidity" class="humid">
+            --
+        </div>%
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/todayWeatherController.js"></script>

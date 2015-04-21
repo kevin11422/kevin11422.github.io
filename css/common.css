@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* left menu */
+.menu {
+    float : left;
+    width : 20%;
+}
+
+.menu ul {
+    width : 100%;
+    padding : 10px;
+}
+
+.menu ul li {
+    font-size  : 12px;
+    font-family: Arial;
+    cursor     : pointer;
+    padding    : 5px 5px 5px 20px;
+    border     : 1px solid #c0c0c0;
+    /*margin-top :-1px;*/
+}
+
+.menu ul li.active {
+    font-weight: bold;
+    border-color: #2a9dcd;
+    background-color: #E7EBFF;
+}
+
+/* right content */
+.content {
+    float : right;
+    width  : 77%;
+    padding: 10px 10px 10px 20px;
+    font-size  : 16px;
+    font-family: Arial;
+}
+
+.content .title{
+    padding: 4px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.content .info {
+    margin: 15px 0;
+}
+
+/*add by rockie to wait for ajax response*/
+#loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483647;  /*most top*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0;
+    background: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+    -moz-opacity: .30;
+}
+
+#loading > div {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    margin-top: -64px;
+    margin-left: -64px;
+}
+
+/*
+#loading:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+
+#loading > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+*/

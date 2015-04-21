@@ -1,0 +1,65 @@
+.row {
+    margin: 15px 0;
+}
+
+.row > div {
+    margin-right: 10px;
+    display : inline-block;
+    *display : inline;
+    *zoom : 1;
+}
+
+.row input {
+    vertical-align: middle;
+}
+
+.row .desc {
+    vertical-align: bottom;
+    line-height: 30px;
+}
+
+.row .desc .big{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.row .desc .small{
+    color : #888888;
+    font-size: 1.2em;
+}
+
+.row .temp, .row .humid {
+    margin: 0;
+}
+
+.error {
+    width           : 80%;
+    padding         : 5px 10px;
+    border          : 1px solid #FF0000;
+    display         : none;
+    background-color: #FFB7DD;
+}
+
+.icon {
+    width: 65px;
+    height: 70px;
+    background-image: url(../img/icons.png);
+    background-repeat: no-repeat;
+}
+
+.cloud {
+    background-position: -70px -370px;
+}
+
+.rain {
+    background-position: -286px -370px;
+}
+
+.sun {
+    background-position: -70px -9px;
+}
+
+.none {
+    background-position: -140px -514px;
+}
+
